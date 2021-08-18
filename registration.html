@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Berkay Çetin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <title>Registration</title>
+
+<style>
+
+body{
+     background-image:url(https://i.pinimg.com/originals/fd/52/af/fd52af4100d3a275fcae8b42f62f6594.jpg) ;
+     background-size: cover;
+     background-repeat: no-repeat;
+     
+    
+     }
+
+
+  input[type=submit],[type=reset] {
+        background-color: #ffffff;
+        padding: 6px 12px;
+        border:none;
+        border-radius: 4px;
+        cursor: pointer;
+       
+      }
+     
+
+</style>
+</head>
+
+<body>
+
+
+  <div class="container my-5  text-white">
+    <h1 class="text-center">REGISTRATION</h1><br>
+    <form name ="register" action="calculator.html" method="POST" id="form" onsubmit=" return formCheck() " >
+       
+    <div class="row">
+      <div class="form-group col-8  mx-auto ">
+        <label for="name"> Name :</label>
+        <input type="text" class="form-control " name="register-username"  id="name">
+        <div class="alert alert-danger" role="alert">Only English Characters</div>
+      </div>
+    </div>
+
+
+    <div class="row">
+        <div class="form-group col-8  mx-auto ">
+          <label for="surname"> Surname :</label>
+          <input type="text" class="form-control " name="register-name"  id="surname">
+          <div class="alert alert-danger " role="alert">Only English Characters</div>
+        </div>
+      </div>
+
+
+    <div class="row">
+      <div class="form-group col-8 mx-auto ">
+        <label for="email">Email:</label>
+        <input type="text" class="form-control" name="register-email" id="email" placeholder="example@example.com">
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="form-group col-8 mx-auto  ">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control " name="register-password" id="password" >
+        <div class="alert alert-danger" role="alert">It should be at least 6 and at most 15 characters long and contains at least one uppercase letter, one numeric digit, and one special character(Like !,@,&,*,etc. ).</div>
+      </div>
+    </div>
+
+
+    
+    <div class="row">
+      <div class="form-group col-8  mx-auto ">
+        <label for="dateOfBirth"> Date of Birth:</label>
+        <input type="text" class="form-control " name="register-dateOfBirth"  id="dateOfBirth" placeholder="DD/MM/YYYY">
+      </div>
+    </div>
+ 
+
+    <div class="row">
+        <div class="form-group col-8 mx-auto ">
+          <label for="gender">Gender: </label>
+          <select name="register-gender" class="form-control" id="gender" >
+             <option>Male</option>
+             <option>Female</option>
+             <option>Other</option>
+          </select>
+        </div>
+      </div>
+  
+
+
+    <div class="form-group w-50 mx-auto clearfix text-light my-5">
+       <h5 class="text-left">Mark Your Interests:</h5>
+
+
+  <div class="row">
+      <div class="col-lg-6 float-left">
+      
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck1" name="Interests">
+          <label class="custom-control-label" for="customCheck1"> Autos and Vehicles</label>
+        </div>
+        
+      
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck2" name="Interests">
+          <label class="custom-control-label" for="customCheck2">Science and Technology</label>
+        </div>
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck3" name="Interests">
+          <label class="custom-control-label" for="customCheck3">Music</label>
+        </div>
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck4" name="Interests">
+          <label class="custom-control-label" for="customCheck4">Gaming</label>
+        </div>
+      
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck5" name="Interests">
+          <label class="custom-control-label" for="customCheck5">Politics</label>
+        </div>
+      
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck6" name="Interests">
+          <label class="custom-control-label" for="customCheck6">Astronomy</label>
+        </div>
+      
+      </div>
+
+      
+      <div class="col-lg-6 float-left">
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck7" name="Interests">
+          <label class="custom-control-label" for="customCheck7">Comedy</label>
+        </div>
+        
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck8" name="Interests">
+          <label class="custom-control-label" for="customCheck8">Pets and Animals</label>
+        </div>
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck9" name="Interests">
+          <label class="custom-control-label" for="customCheck9">Sports</label>
+        </div>
+      
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck10" name="Interests">
+          <label class="custom-control-label" for="customCheck10"> Films and Animations</label>
+        </div>
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck11" name="Interests">
+          <label class="custom-control-label" for="customCheck11"> Travel </label>
+        </div>
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck12" name="Interests">
+          <label class="custom-control-label" for="customCheck12"> Culture </label>
+        </div>
+
+        </div>
+      </div>
+    </div><br>
+
+
+        <p class="text-center my-3">
+            <input class="btn-light" type="submit" name="send" value="Submit" >
+            <input class="mx-2 btn-light" type="reset" value="Reset"><br><br>
+        </p>
+
+    </form>
+
+  </div>   
+
+
+    
+
+
+      <script src="script.js"></script>
+      
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    
+</body>
+</html>
