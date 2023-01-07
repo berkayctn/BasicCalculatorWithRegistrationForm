@@ -1,5 +1,5 @@
 # BasicCalculatorWithRegistrationForm
-Calculator and registration form controlled by JavaScript, powered with Bootstrapt.
+Calculator and registration form controlled by JavaScript, powered with Bootstrap.
 * As a result of completing the registration form without any mistakes, the page is redirected to the calculator.
 
 # Regitration
